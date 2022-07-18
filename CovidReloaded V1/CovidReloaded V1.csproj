@@ -1,0 +1,177 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\bin\Windows\Content\Graphics\Alpha.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\AlphaTest.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\Background.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\Delta.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\DeltaTest.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\Lamda.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\LamdaTest.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\Omni.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\OmniTest.xnb" />
+    <None Remove="Content\bin\Windows\Content\Graphics\ToiletPaper.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Alpha.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Controls.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Delta.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Fence.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\GameOver.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Lamda.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\Omni.xnb" />
+    <None Remove="Content\bin\Windows\Graphics\ToiletPaper.xnb" />
+    <None Remove="Content\Fonts\File.spritefont" />
+    <None Remove="Content\Graphics\Alpha.png" />
+    <None Remove="Content\Graphics\Background.png" />
+    <None Remove="Content\Graphics\CONTROLS.png" />
+    <None Remove="Content\Graphics\Delta.png" />
+    <None Remove="Content\Graphics\Fence.png" />
+    <None Remove="Content\Graphics\GAMEOVER.png" />
+    <None Remove="Content\Graphics\Ground.png" />
+    <None Remove="Content\Graphics\Lamda.png" />
+    <None Remove="Content\Graphics\Omni.png" />
+    <None Remove="Content\Graphics\ToiletPaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GeoSketch" Version="1.7.0" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\Audio\BackgroundPhonk.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Audio\FinalBackgroundSong.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Audio\PhonkSong.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\BackgroundSong.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\GameOverSound.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\Impact.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\ImpactSfx.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\Jump.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\Laser.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\LaserBlast.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Audio\Song.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\Achtergrond.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\bullet.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\CharacterRun.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\characterRun2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\Controls.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\dude.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\Fence.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\Ground.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Content\Graphics\WcPapier.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\AlphaTest.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\AlphaVariant.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Background.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\CharacterSprite.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\ControlScreen.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\DeltaTest.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\DeltaVariant.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\GameOverScreen.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Ground.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\LamdaTest.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\LamdaVariant.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Obstacle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\OmniTest.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\OmniVariant.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Player.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Qrground.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\Sanitizer.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\ShootingEnemy.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\bin\Windows\Graphics\ToiletPaperObstacle.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Graphics\PlayerTest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
